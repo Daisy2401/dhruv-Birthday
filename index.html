@@ -68,7 +68,7 @@ body{
   margin-bottom:18px;opacity:0;animation:rise .9s .5s forwards;}
 .cover-name{
   font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-2px;
-  font-size:clamp(60px,15vw,96px);line-height:1;color:var(--white);
+  font-size:clamp(40px,11vw,68px);line-height:1;color:var(--white);
   text-shadow:0 4px 24px rgba(0,0,0,.8);opacity:0;animation:rise .9s .7s forwards;}
 .cover-sub{
   font-family:'Inter',sans-serif;font-size:17px;font-style:italic;font-weight:300;
@@ -120,8 +120,8 @@ section.revealed{opacity:1;transform:translateY(0);}
 @keyframes spin{to{transform:rotate(360deg)}}
 .hem{position:absolute;font-size:18px;animation:emb ease-in-out infinite;}
 @keyframes emb{0%,100%{transform:scale(1)}50%{transform:scale(1.3)}}
-.hero-name{font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-2px;font-style:normal;font-weight:600;
-  font-size:clamp(68px,17vw,108px);line-height:1;color:var(--white);
+.hero-name{font-family:'Inter',sans-serif;font-weight:900;letter-spacing:-1px;font-style:normal;font-weight:600;
+  font-size:clamp(44px,11vw,72px);line-height:1;color:var(--white);
   text-shadow:0 4px 28px rgba(0,0,0,.75);margin-bottom:6px;}
 .hero-turning{font-family:'Inter',sans-serif;font-weight:700;letter-spacing:-1px;font-style:normal;font-weight:600;
   font-size:clamp(40px,11vw,64px);line-height:1.15;color:var(--gold);
@@ -341,7 +341,7 @@ section.revealed{opacity:1;transform:translateY(0);}
   <div id="cPetals"></div>
   <span class="cover-tag">You are warmly invited to celebrate</span>
   <img class="cover-photo" src="images/dhruv-cover.jpeg" alt="Dhruv"/>
-  <div class="cover-name">Dhruv</div>
+  <div class="cover-name">Dhruv Tyagi</div>
   <div class="cover-sub">9th Birthday Celebration &#x2728;</div>
   <button class="open-btn" onclick="openInvite()">&#x1F382; Open the Invitation</button>
 </div>
@@ -349,7 +349,7 @@ section.revealed{opacity:1;transform:translateY(0);}
 <div id="main">
 
 <section id="s-hero">
-  <p style="font-family:'Inter',sans-serif;font-size:22px;color:rgba(255,255,255,.85);margin-bottom:10px;text-shadow:0 2px 12px rgba(0,0,0,.75);">Happy Birthday</p>
+  <p style="font-family:Georgia,serif;font-size:26px;font-weight:bold;font-style:italic;color:rgba(255,255,255,.92);margin-bottom:12px;text-shadow:0 3px 14px rgba(0,0,0,.8);letter-spacing:1px;">Happy Birthday</p>
   <div class="hero-frame">
     <div class="ring1"></div><div class="ring2"></div>
     <img src="images/dhruv-cover.jpeg" alt="Dhruv"/>
@@ -358,9 +358,9 @@ section.revealed{opacity:1;transform:translateY(0);}
     <span class="hem" style="bottom:2px;left:-10px;animation-delay:1.4s;animation-duration:2.1s;">&#x1F382;</span>
     <span class="hem" style="bottom:2px;right:-10px;animation-delay:.3s;animation-duration:2.9s;">&#x1F381;</span>
   </div>
-  <div class="hero-name">Dhruv</div>
+  <div class="hero-name">Dhruv Tyagi</div>
   <div class="hero-turning">is turning 9 &#x1F389;</div>
-  <div class="hero-date-badge">&#x1F4C5; FRIDAY &middot; 8 MAY 2026 &middot; 8 PM</div>
+  <div class="hero-date-badge">&#x1F4C5; FRIDAY, 8 MAY 2026 &middot; 8:00 PM</div>
   <div class="countdown-wrap">
     <div class="cd-box"><span class="cd-num" id="cd-d">00</span><span class="cd-lbl">Days</span></div>
     <div class="cd-box"><span class="cd-num" id="cd-h">00</span><span class="cd-lbl">Hours</span></div>
@@ -417,8 +417,8 @@ section.revealed{opacity:1;transform:translateY(0);}
 <div class="sep"></div>
 
 <section id="s-gallery">
-  <span class="section-tag">Memories</span>
-  <div class="section-title">Our Beautiful Moments</div>
+  <span class="section-tag" style="font-weight:700;letter-spacing:3px;">Memories</span>
+  <div class="section-title" style="font-weight:900;letter-spacing:-0.5px;">Our Beautiful Moments</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
   <div class="gallery-masonry">
     <div class="gal-main" onclick="openLB(this.querySelector('img').src)">
@@ -447,13 +447,17 @@ section.revealed{opacity:1;transform:translateY(0);}
   <span class="section-tag">Attendance</span>
   <div class="section-title">RSVP</div>
   <div class="divider"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
+  <div style="text-align:center;margin-bottom:16px;">
+    <div style="font-family:Georgia,serif;font-style:italic;font-size:30px;font-weight:bold;color:var(--gold);text-shadow:0 3px 14px rgba(0,0,0,.7);letter-spacing:1px;">Tyagi Family</div>
+    <div style="width:60px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);margin:8px auto 0;"></div>
+  </div>
   <div class="rsvp-info-card">
     <div class="rsvp-hosts-title">Mrs. Kamlesh Tyagi &amp; Mr. Ramnauj Tyagi</div>
     <div class="rsvp-cordially">cordially invite you to join the</div>
     <div class="rsvp-party-of">Party of their grandson<br/><strong>Dhruv Tyagi</strong></div>
     <div class="rsvp-son-of">Son of Suchi Tyagi &amp; Rakesh Tyagi</div>
   </div>
-  <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:14px;">Please confirm by <strong style="color:var(--gold);font-weight:700;">5th May 2026</strong></p>
+  <p style="font-size:14px;color:rgba(255,255,255,.6);margin-bottom:14px;">Please confirm by <strong style="color:var(--gold);font-weight:700;">8th May 2026</strong></p>
   <a href="tel:+919971541001" class="call-btn">&#x1F4DE; +91 99715 41001</a>
   <div style="margin-top:22px;text-align:left;">
     <label class="flbl" for="gName">Your Name</label>
@@ -484,7 +488,7 @@ section.revealed{opacity:1;transform:translateY(0);}
   <button class="wish-btn" onclick="sendWish()">&#x1F48C; Send Birthday Wish</button>
   <div class="wish-wall" id="wishWall">
     <div class="wish-card">
-      <div class="wish-name">Kamlesh &amp; Ramnauj Tyagi &#x1F3E0;</div>
+      <div class="wish-name">Kamlesh Tyagi &amp; Ramnauj Tyagi &#x1F3E0;</div>
       <div class="wish-text">Happy 9th Birthday, our dear Dhruv! You are the joy of our lives and the pride of this family. May God bless you with health, happiness and success. We love you so much! &#x1F382;&#x2764;&#xFE0F;</div>
       <div class="wish-time">Today</div>
     </div>
@@ -493,7 +497,7 @@ section.revealed{opacity:1;transform:translateY(0);}
 
 <div class="footer-section">
   <div class="divider" style="justify-content:center;margin-bottom:16px;"><div class="divider-line"></div><div class="divider-gem"></div><div class="divider-line"></div></div>
-  <div class="footer-name">Dhruv</div>
+  <div class="footer-name">Dhruv Tyagi</div>
   <div class="footer-sub">9th Birthday &middot; 8 May 2026</div>
   <div class="footer-divider"></div>
   <p style="font-family:'Inter',sans-serif;font-size:16px;color:rgba(255,255,255,.4);">With love &mdash; The Tyagi Family &#x2764;&#xFE0F;</p>
